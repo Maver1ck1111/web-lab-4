@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header, .footer{
+    width: 100vw;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    background-color: white;
+}
+
+.inner, .footer-inner{
+    width: 70%;
+    height: 100%;
+    margin: 0 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    max-width: 250px;
+}
+
+.search-bar input{
+    border: none;
+    height: 45px;
+    width: 200px;
+}
+
+.search-bar button{
+    margin: 5px;
+}
+
+.search-icon{
+    width: 25px;
+    height: 25px;
+}
+
+.menu-icon, .logo-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.footer{
+    background-color: black;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+
+.main{
+    min-height: 80vh;
+    width: 100vw;
+}
+
+.content{
+    display: flex;
+    width: 70vw;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover; 
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.card{
+    min-height: 400px;
+    width: 325px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+    height: 200px;
+}
+
+.card img{
+    margin-bottom: 15px;
+}
+.card h2 {
+    margin-bottom: 20px;
+    color: rgb(255, 162, 0);
+}
+
+.card p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.text{
+    width: 50%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-menu-icon{
+    display: none;
+}
+
+@media(max-width: 960px){
+    .content{
+        align-items: center;
+    }
+
+    .inner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cards{
+        justify-content: center;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .text{
+        text-align: center;
+        width: 80%;
+    }
+
+    .search-bar{
+        margin-top: 10px;
+    }
+
+    .menu-icon{
+        margin-bottom: 10px;
+    }
+
+    .footer-menu-icon{
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+}
